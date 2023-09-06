@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <div class="container rate">
+  <div class="container rate" id = "rate">
    <div class="star">
     <div class="circle">
      <img src="./images/icon-star.svg" alt="">
@@ -55,15 +55,36 @@
     </div> 
    </div>
    <div class="submit">
-    <a href="#">SUBMIT</a>
+    <a href="#" id = "submitbtn">SUBMIT</a>
     
    </div>
   </div>
   
 
-  <div class="container thank">
+  <div class="container thank" id = "thank">
     <div class="phone">
       <img src="./images/illustration-thank-you.svg" alt="">
+      
+    </div>
+
+    <div class="select">
+      <p>
+        You selected <span id = 'rating'>4</span> out of 5
+
+      </p>
+      
+    </div>
+
+    <div class="thank-content">
+      <h2>
+        Thank you!
+
+      </h2>
+      <p>
+        We appreciated you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+
+      </p>
+       
       
     </div>
     
@@ -76,6 +97,8 @@
 
 
   
-  
+  <script src = "./index.js">
+    
+  </script> 
 </body>
 </html>

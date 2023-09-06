@@ -17,11 +17,14 @@
 html{
   width: 100%;
   height: 100%;
+  max-width: 3000px;
+  overflow: hidden;
 }
 
 body{
   width: 100%;
   height: 100%;
+  max-width: 3000px;
   background-color: hsl(216, 12%, 8%); 
   color: white;
   font-size: 14px;
@@ -30,32 +33,41 @@ body{
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
   
 }
 .container{
-  width: 345px;
-  height: 350px;
+  width: 360px;
+  height: 380px;
   background-color: hsl(215, 23%, 14%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 20px;
   border-radius: 20px;
   position: absolute;
+  transition: transform .8s ease;
 
 }
 
-.phone{
-  z-index: -1;
+.rate{
+  justify-content: flex-start;
+}
+
+.thank{
+  z-index: 3;
+  transform: translateX(-5000px);
 }
 .rate{
-  z-index: 2;
+  z-index: 3;
 }
 
 .star{
   width:  100%;
   display: flex; 
+  height: 50px;
+  align-items: center;
 
 }
 .circle , .item{
@@ -83,6 +95,7 @@ body{
 
 .point{
   width: 100%;
+  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -98,12 +111,17 @@ body{
   transition: all .2s ease;
 }
 
+.selected{
+  background-color: rgb(124, 136, 152);
+}
+
 .submit{
   width: 100%;
-  height: 40px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5px;
 
 }
 
@@ -132,4 +150,47 @@ body{
 .submit a:hover{
   background-color: white;
   color: rgb(252, 118, 19);
+}
+
+
+/* thank component */
+.thank{
+  text-align: center;
+}
+.select{
+  width: 180px;
+  height: 24px;
+  background-color: hsl(215, 18%, 19%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  position: relative;
+  margin: 10px 0;
+}
+
+.select p{
+  display: block;
+  line-height: 14px;
+  font-size: 14px;
+  position: absolute;
+  transform: translateY(2.5px);
+  color: rgb(252, 118, 19);
+
+  
+}
+
+  
+.thank-content h2{
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 80px; 
+  
+
+}
+
+.thank-content p{
+  color: hsl(217, 8%, 58%); 
+  font-size: 16px;
+  line-height: 1.5;
 }
