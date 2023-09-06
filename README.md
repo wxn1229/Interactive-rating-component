@@ -1,5 +1,8 @@
 # Interactive rating component
 
+# URL
+[link]('https://friendly-queijadas-30067a.netlify.app/')
+
 ## Purpose
 To pratice how to use **JavaScript DOM** for wev development 
 
